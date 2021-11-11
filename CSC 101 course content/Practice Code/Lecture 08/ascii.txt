@@ -1,0 +1,29 @@
+example 1: ASCII to value
+#include <iostream>
+using namespace std;
+int main()
+{
+ char c;
+ cout << "Enter a character: ";
+ cin >> c;
+ cout << "ASCII Value of " << c << " is " << int(c);
+ return 0;
+}
+
+
+example 2:
+
+value to ASCII
+
+#include <iostream>
+using namespace std;
+int main()
+{
+ int c;
+ cout << "Enter an int ";
+ cin >> c;
+ cout << "ASCII of value " << c << " is " << char(c);
+ return 0;
+}
+
+

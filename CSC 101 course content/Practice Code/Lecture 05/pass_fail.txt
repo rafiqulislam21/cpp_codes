@@ -1,0 +1,59 @@
+
+Problem 1:
+#include <iostream>
+using namespace std;
+
+int main()
+{
+int mark = 100;
+
+if (mark >= 50) {
+  cout << "You passed." << endl;
+  if (mark == 100) {
+    cout <<"Perfect!" << endl;
+  }
+}
+else {
+  cout << "You failed." << endl;
+}
+
+return 0;
+}
+
+
+
+Problem: 2:
+
+//Age
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+int age=18;
+if(age>14)
+{
+  if(age>=18)
+ {
+    cout<<"Adult";
+ }
+  else
+ {
+    cout<<"Teenager";
+ }
+}
+else
+{
+  if (age > 0)
+ {
+    cout<<"Child";
+ }
+  else
+ {
+    cout << "Something's wrong";
+ }
+}
+return 0;
+}

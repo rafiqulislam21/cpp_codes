@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int number;
+    cout << "Enter an integer: ";
+    cin >> number;
+
+    if ( number <= 10)
+    {
+        cout << "You entered a number less than 10: " << endl;
+        if(number%2==0)
+        {
+         cout << "You entered a even number " << endl;
+        }
+        else
+        {
+         cout << "You entered a odd number " << endl;
+        }
+        }
+    else
+        cout << "You entered a number grater than 10 " << endl;
+    return 0;
+}
+

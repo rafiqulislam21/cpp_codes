@@ -1,0 +1,17 @@
+
+int main ()
+
+{
+int n = 6; 
+  if(n==0)
+     return 0;
+  int fib1 = 0;int fib2 = 1;int result;
+
+  for(int i =1; i<n;++i){
+    result = fib1+fib2;
+    fib1 = fib2;
+    fib2 = result;
+    cout <<result<<" ";
+}
+  return 0;
+}

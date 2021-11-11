@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int num=0,num2=0,result=0;char op;
+	cout<<"\n  Calculator:-  \nEnter Number: " ;
+	cin>>num;
+	cout<<"Enter operator +,-,*,/,^  : ";
+	cin >>op;
+	cout<<"Enter second number: " ;
+	cin>>num2;
+    if(op=='+')result=num+num2;
+	if(op=='-')result=num-num2;
+	if(op=='*')result=num*num2;
+	if(op=='/')result=num/num2;
+	if(op=='^')result=num^num2;
+	cout<<"result: "<<result<<"\n";
+	return 0;
+}

@@ -1,0 +1,49 @@
+
+Home » C++ programming language
+
+A simple example of nested if-else statement in C++
+
+ 
+Nested if-else statement in C++: In this example, we are taking a character from keyboard and checking whether it is Vowel or Consonant, before it we are checking it is valid alphabet or not?
+
+Nested if-else statement
+When we validate conditions within the condition, it is called Nested condition checks; here we are using Nested if-else statement.
+
+Let suppose, if you have two conditions: CON_1 and CON_2 and you want to validate CON_2, when CON_1 is true, in such case we must have to use Nested if-else.
+
+Example/program: Here we are reading a character from the user and validating that it is valid alphabet or not, if the character if valid alphabet then we are validating it is VOWEL or not and printing the appropriate message for the input character.
+
+Consider the program:
+
+//EXAMPLE of Nested if else
+//Read a character a check whether it is VOWEL or CONSONANT
+
+#include<iostream>
+using namespace std;
+
+
+int main()
+{
+	char ch;
+
+	//reading a character
+	cout<<"Enter an alphabet: ";
+	cin>>ch;
+
+	//condiion to check character is alphabet or not
+	if( (ch>='A' && ch<='Z') || (ch>='a' && ch<='z'))
+	{
+		//conditions to check character is VOWEL or not
+		if( ch=='A' || ch=='a' || ch=='E' || ch=='e' || ch=='I' || ch=='i' || ch=='O' || ch=='o' || ch=='U' || ch=='u')
+			cout<<"\""<<ch<<"\" is a VOWEL"<<endl;
+		else
+			cout<<"\""<<ch<<"\" is a CONSONANT"<<endl;
+	}
+	else
+	{
+		cout<<"\""<<ch<<"\" is not an alphabet\n";
+	}
+
+
+	return 0;
+}

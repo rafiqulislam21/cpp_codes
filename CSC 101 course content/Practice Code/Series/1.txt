@@ -1,0 +1,119 @@
+1+1/3+1/5
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int i,n;
+	float sum=0;
+
+	cout<<"Enter the value of n ";
+	cin>>n;
+
+	for(i=1;i<=n;i++)
+    if(i%2!=0){
+       sum += 1.0/i;
+    }
+	cout<<"Sum : "<<sum;
+
+
+	return 0;
+}
+
+
+
+
+
+// C++ program to find the sum of 
+// series 1 - 2 + 3 - 4 +...... 
+  
+#include <iostream>
+using namespace std;
+int main()
+{
+int x = 2;
+int y = 1;
+int z = 4; /*or use cin to get input, this will be our 'n' aka the max range*/
+int sum = 0;
+while ( y < z){
+if ( y%x != 0) {
+sum = sum + y; }
+else {
+sum = sum - y;
+}
+y++;
+}
+cout << sum;
+return 0;
+}
+
+
+Or: 
+
+#include <iostream>
+using namespace std;
+int main()
+{
+int even =0, odd=0;
+int n;
+cout<<"Enter a number: "<<endl;
+cin>>n;
+for(int i=1;i<=n;i++)
+{
+    if(i%2==0)
+        even= even+i;
+    else
+        odd=odd+i;
+}
+cout<<"The sum is:"<< odd-even;
+}
+
+
+
+// For Printing like 1+2+3=6;
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int i,n;
+	float sum=0;
+	cout<<"Enter the value of n ";
+	cin>>n;
+
+	for(i=1;i<=n;i++)
+    {
+       sum += i;
+       if (i<n){
+        cout<<i<<"+";
+       }
+       else
+        cout<<i<<"=";
+    }
+	cout<<sum;
+	return 0;
+}
+*/
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int i,n;
+	float sum=0;
+	cout<<"Enter the value of n ";
+	cin>>n;
+
+	for(i=1;i<=n;i++)
+    {
+       sum += 1.0/i;
+       if (i<n){
+        cout<<"1.0/"<<i<<"+";
+       }
+       else
+        cout<<"1.0/"<<i<<"=";
+    }
+	cout<<sum;
+	return 0;
+}

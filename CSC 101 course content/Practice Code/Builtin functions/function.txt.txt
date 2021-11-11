@@ -1,0 +1,241 @@
+
+
+Problem 1: 
+#include <iostream>
+#include <string.h>
+using namespace std;
+int main()
+{
+    // String obj
+    string str = "GeeksforGeeks";
+
+    // 1. size of string object using size() method
+    cout << str.size() << endl;
+
+    // 2. size of string object using length method
+    cout << str.length() << endl;
+
+    // 3. size using old style
+    // size of string object using strlen function
+    cout << strlen(str.c_str()) << endl;
+
+    // The constructor of string will set it to the
+    // C-style string,
+    // which ends at the '\0'
+
+    // 4. size of string object Using while loop
+    // while 'NOT NULL'
+    int i = 0;
+    while (str[i])
+        i++;
+    cout << i << endl;
+
+    // 5. size of string object using for loop
+    // for(; NOT NULL ??
+    for (i = 0; str[i]; i++)
+        ;
+    cout << i << endl;
+
+    return 0;
+}
+
+
+
+
+Problem 2:(Math)
+
+#include <iostream> 
+#include <math.h> 
+using namespace std; 
+  
+int main() 
+{ 
+    double x = 2.3; 
+    cout << "Sine value of x=2.3 : " << sin(x) << endl; 
+    cout << "Cosine value of x=2.3 : " << cos(x) << endl; 
+    cout << "Tangent value of x=2.3 : " << tan(x) << endl; 
+  
+    double y = 0.25; 
+    cout << "Square root value of y=0.25 : " << sqrt(y) << endl; 
+  
+    int z = -10; 
+    cout << "Absolute value of z=-10 : " << abs(z) << endl; 
+    cout << "Power value: x^y = (2.3^0.25) : " << pow(x, y) << endl; 
+  
+    x = 3.0; 
+    y = 4.0; 
+    cout << "Hypotenuse having other two sides as x=3.0 and"
+         << " y=4.0 : " << hypot(x, y) << endl; 
+  
+    x = 4.56; 
+    cout << "Floor value of x=4.56 is : " << floor(x) << endl; 
+  
+    x = -4.57; 
+    cout << "Absolute value of x=-4.57 is : " << fabs(x) << endl; 
+  
+    x = 1.0; 
+    cout << "Arc Cosine value of x=1.0 : " << acos(x) << endl; 
+    cout << "Arc Sine value of x=1.0 : " << asin(x) << endl; 
+    cout << "Arc Tangent value of x=1.0 : " << atan(x) << endl; 
+  
+    y = 12.3; 
+    cout << "Ceiling value of y=12.3 : " << ceil(y) << endl; 
+  
+    x = 57.3; // in degrees 
+    cout << "Hyperbolic Cosine of x=57.3 : " << cosh(x) << endl; 
+    cout << "Hyperbolic tangent of x=57.3 : " << tanh(x) << endl; 
+  
+    y = 100.0; 
+    // Natural base with 'e' 
+    cout << "Log value of y=100.0 is : " << log(y) << endl; 
+  
+    return 0; 
+}
+
+
+
+Problem 3: (Clock)
+#include <ctime>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    for(int x=0; x<1000; x++)
+    {
+        cout<<endl;
+    }
+    cout<<"Clock ticks: "<<clock()<<" Seconds: "<<clock()/CLOCKS_PER_SEC;
+}
+
+Problem 4:(Time)
+#include <ctime>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+  time_t hold_time;
+  hold_time=time(NULL);
+  cout<<"The date is: "<<ctime(&hold_time);
+}
+
+
+Problem 5: (Get a charecter)
+//Example waits for a character input, then outputs the character
+#include <cstdio>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+  char a_char;
+  a_char=getchar();
+  cout<<a_char;
+}
+
+
+problem 6: (Give AscII value)
+#include <cstdio>
+
+using namespace std;
+
+//Example outputs the character corresponding to the ASCII value 65
+int main()
+{
+    putchar(65);
+}
+
+
+Problem 7: (Lower and uppepr)
+//Example reads in a character and makes up lowercase 
+#include <iostream>
+#include <cctype>
+
+using namespace std;
+
+int main()
+{
+    char x;
+    cin>>x;
+    x=tolower(x);
+    cout<<x;
+}
+
+
+
+
+
+//Program creates char d, sets it equal to lowercase letter
+//Converts it to uppercase and outputs it
+#include <cctype>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    char d='a';  
+    d=toupper(d);
+    cout<<d;
+}
+
+
+
+
+Problem 8: (Random Number) 
+//Program returns a random number
+#include <iostream>
+#include <cstdlib>
+
+using namespace std;
+
+int main()
+{
+    cout<<rand();
+    cout<<rand()%6;  //Number between 0 and 5
+}
+
+
+
+
+Problem 9(Random Range):
+
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{ 
+    int d=rand()%12;  
+    cout<<d;
+}
+
+
+
+Problem 10 (Example abort the program):
+//Example aborts the program
+#include <cstdlib>
+int main()
+{
+  abort();
+}
+
+
+Problem 11: (Log)
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+  cout<<log10(100);
+}
+
+
+

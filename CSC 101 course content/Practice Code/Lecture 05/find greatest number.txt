@@ -1,0 +1,38 @@
+	#include<iostream.h>
+
+       void main()
+       {
+              int a,b,c;
+
+              cout << "\nEnter value of A : ";
+              cin >> a;
+
+              cout << "\nEnter value of B : ";
+              cin >> b;
+
+              cout << "\nEnter value of C++ : ";
+              cin >> c;
+
+              if (a>b)
+                {
+                          if (a>c)
+                             cout << "\n\nA is Greatest";
+                           else
+                              cout << "\n\nC is Greatest";
+                  }
+              else
+                  {
+                            if (b>c)
+                                cout << "\n\nB is Greatest";
+                              else
+                                 cout << "\n\nC is Greatest";
+                    }
+       }
+
+   Output :
+
+              Enter value of A : 45
+              Enter value of B : 89
+              Enter value of C : 78
+
+              B is Greatest

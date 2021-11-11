@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int number;
+    cout << "Enter an integer: ";
+    cin >> number;
+
+    // checks if the number is positive
+    if ( number > 0) 
+    {
+        cout << "You entered a positive integer: " << number << endl;
+    }
+
+    cout << "This statement is always executed.";
+    return 0;
+
+}
+
+
+#include <iostream>
+using namespace std;
+ 
+int main () {
+   // local variable declaration:
+   int a = 100;
+ 
+   // check the boolean condition
+   if( a < 20 ) {
+      // if condition is true then print the following
+      cout << "a is less than 20;" << endl;
+   } else {
+      // if condition is false then print the following
+      cout << "a is not less than 20;" << endl;
+   }
+   cout << "value of a is : " << a << endl;
+ 
+   return 0;
+}
